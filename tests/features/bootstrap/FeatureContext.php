@@ -119,6 +119,14 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
   }
 
   /**
+   * @AfterScenario
+   */
+  public function memoryUsage()
+  {
+    var_dump('Memory Usage: ' . memory_get_usage());
+  }
+
+  /**
    * Disabled and uninstall modules.
    *
    * @AfterScenario
