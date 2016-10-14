@@ -23,12 +23,10 @@ default:
         tags: "~@communities&&~@wip&&@api&&~@i18n"
   extensions:
     Behat\MinkExtension:
-      goutte: ~
+      browser_name: chrome
       javascript_session: 'selenium2'
       selenium2:
-        wd_host: "http://localhost:8643/wd/hub"
-        capabilities:
-          version: ''
+        wd_host: "http://localhost:4444/wd/hub"
       base-url: '{{ behat.base_url }}'
       files_path: '{{ platform.build.dir }}'
     Drupal\DrupalExtension:
@@ -72,10 +70,10 @@ communities:
         tags: "@communities&&~@wip"
   extensions:
     Behat\MinkExtension:
-      goutte: ~
+      browser_name: chrome
       javascript_session: 'selenium2'
       selenium2:
-        wd_host: "http://localhost:8643/wd/hub"
+        wd_host: "http://localhost:4444/wd/hub"
       base-url: '{{ behat.base_url }}'
     Drupal\DrupalExtension:
       api_driver: 'drupal'
