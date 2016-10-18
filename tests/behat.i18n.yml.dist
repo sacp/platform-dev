@@ -18,7 +18,7 @@ default:
       javascript_session: 'selenium2'
       base_url: '{{ behat.base_url }}'
       sessions:
-        selenium2:
+        default:
           selenium2:
             wd_host: "http://127.0.0.1:4444/wd/hub"
       files_path: '{{ platform.build.dir }}'
@@ -68,7 +68,7 @@ communities:
       javascript_session: 'selenium2'
       base_url: '{{ behat.base_url }}'
       sessions:
-        selenium2:
+        default:
           selenium2:
             wd_host: "http://127.0.0.1:4444/wd/hub"
     Drupal\DrupalExtension:
