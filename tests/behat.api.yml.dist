@@ -24,7 +24,6 @@ default:
   extensions:
     Behat\MinkExtension:
       browser_name: chrome
-      javascript_session: 'selenium2'
       base_url: '{{ behat.base_url }}'
       sessions:
         default:
@@ -73,7 +72,6 @@ communities:
   extensions:
     Behat\MinkExtension:
       browser_name: chrome
-      javascript_session: 'selenium2'
       base_url: '{{ behat.base_url }}'
       sessions:
         default:
