@@ -410,6 +410,9 @@ projects[media][patch][] = http://www.drupal.org/files/issues/file_entity-remove
 ; https://webgate.ec.europa.eu/CITnet/jira/browse/NEPT-771
 ; Media markup navigation causes duplicated links
 projects[media][patch][] = https://www.drupal.org/files/issues/media-embeddd_documents-2028231-15.patch
+; Hotfix for Media security update SA-CONTRIB-2017-44
+; https://webgate.ec.europa.eu/CITnet/jira/browse/NEPT-832
+projects[media][patch][] = patches/media_hotfix-nept-832.patch
 
 projects[media_crop][subdir] = "contrib"
 projects[media_crop][version] = "1.4"
